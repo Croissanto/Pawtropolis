@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Date;
 
-public class Animal {
+public abstract class Animal {
 
     String name;
     String favoriteFood;
@@ -10,7 +10,7 @@ public class Animal {
     Date zooEnteringDate;
     double weight;
     double height;
-    
+
 
 
 }
