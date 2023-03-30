@@ -1,5 +1,6 @@
 package org.example;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public abstract class Animal {
@@ -7,11 +8,11 @@ public abstract class Animal {
     String name;
     String favoriteFood;
     int age;
-    Date zooEnteringDate;
+    LocalDate zooEnteringDate;
     double weight;
     double height;
 
-    public Animal(String name, String favoriteFood, int age, Date zooEnteringDate, double weight, double height) {
+    public Animal(String name, String favoriteFood, int age, LocalDate zooEnteringDate, double weight, double height) {
         this.name = name;
         this.favoriteFood = favoriteFood;
         this.age = age;
@@ -44,11 +45,11 @@ public abstract class Animal {
         this.age = age;
     }
 
-    public Date getZooEnteringDate() {
+    public LocalDate getZooEnteringDate() {
         return zooEnteringDate;
     }
 
-    public void setZooEnteringDate(Date zooEnteringDate) {
+    public void setZooEnteringDate(LocalDate zooEnteringDate) {
         this.zooEnteringDate = zooEnteringDate;
     }
 
