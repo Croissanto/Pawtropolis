@@ -31,10 +31,7 @@ public class Main {
 
         // Stampa l'aquila con l'apertura alare maggiore
         System.out.println("\nAquila con l'apertura alare maggiore:");
-        Eagle aquilaConAperturaAlareMaggiore = (Eagle) zoo.getAnimali().stream()
-                .filter(animale -> animale instanceof Eagle)
-                .max(Comparator.comparingDouble(animale -> ((Eagle) animale).getWingspan()))
-                .orElse(null);
+        Eagle aquilaConAperturaAlareMaggiore = (Eagle) zoo.getAnimaleConAperturaAlarePiuGrande();
         if (aquilaConAperturaAlareMaggiore != null) {
             System.out.println("Nome: " + aquilaConAperturaAlareMaggiore.getName());
             System.out.println("Apertura alare: " + aquilaConAperturaAlareMaggiore.getWingspan());
@@ -45,10 +42,7 @@ public class Main {
         }
 
         System.out.println("\nAnimale con coda maggiore:");
-        TailAnimal tailAnimalWithLongestTail = (TailAnimal) zoo.getAnimali().stream()
-                .filter(animale -> animale instanceof TailAnimal)
-                .max(Comparator.comparingDouble(animale -> ((TailAnimal) animale).getTailLength()))
-                .orElse(null);
+        TailAnimal tailAnimalWithLongestTail = (TailAnimal) zoo.getAnimaleConCodaPiuLunga();
         if (tailAnimalWithLongestTail != null) {
             System.out.println("Nome: " + tailAnimalWithLongestTail.getName());
             System.out.println("Lunghezza coda: " + tailAnimalWithLongestTail.getTailLength());
@@ -57,6 +51,7 @@ public class Main {
 
 
         }
+
     }
 
 
