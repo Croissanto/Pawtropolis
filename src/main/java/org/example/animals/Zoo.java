@@ -14,11 +14,7 @@ public class Zoo {
     public void addAnimal(Animal animale) {
         this.animali.add(animale);
     }
-
-    public List<Animal> getAnimali() {
-        return this.animali;
-    }
-
+    
     public Animal getAnimalePiuAlto(String specie) {
         return animali.stream()
                 .filter(a -> a.getClass().getSimpleName().equalsIgnoreCase(specie))
