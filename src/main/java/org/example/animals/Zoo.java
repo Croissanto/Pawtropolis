@@ -19,26 +19,30 @@ public class Zoo {
         return this.animali;
     }
 
-    public Animal getAnimalePiuAlto() {
+    public Animal getAnimalePiuAlto(String specie) {
         return animali.stream()
+                .filter(a -> a.getClass().getSimpleName().equalsIgnoreCase(specie))
                 .max(Comparator.comparingDouble(Animal::getHeight))
                 .orElse(null);
     }
 
-    public Animal getAnimalePiuBasso() {
+    public Animal getAnimalePiuBasso(String specie) {
         return animali.stream()
+                .filter(a -> a.getClass().getSimpleName().equalsIgnoreCase(specie))
                 .min(Comparator.comparingDouble(Animal::getHeight))
                 .orElse(null);
     }
 
-    public Animal getAnimalePiuPesante() {
+    public Animal getAnimalePiuPesante(String specie) {
         return animali.stream()
+                .filter(a -> a.getClass().getSimpleName().equalsIgnoreCase(specie))
                 .max(Comparator.comparingDouble(Animal::getWeight))
                 .orElse(null);
     }
 
-    public Animal getAnimalePiuLeggero() {
+    public Animal getAnimalePiuLeggero(String specie) {
         return animali.stream()
+                .filter(a -> a.getClass().getSimpleName().equalsIgnoreCase(specie))
                 .min(Comparator.comparingDouble(Animal::getWeight))
                 .orElse(null);
     }
