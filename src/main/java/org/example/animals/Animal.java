@@ -5,12 +5,12 @@ import java.time.LocalDate;
 
 public abstract class Animal {
 
-    String name;
-    String favoriteFood;
-    int age;
-    LocalDate zooEnteringDate;
-    double weight;
-    double height;
+    private String name;
+    private String favoriteFood;
+    private int age;
+    private LocalDate zooEnteringDate;
+    private double weight;
+    private double height;
 
     public Animal(String name, String favoriteFood, int age, LocalDate zooEnteringDate, double weight, double height) {
         this.name = name;

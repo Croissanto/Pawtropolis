@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 public class TailAnimal extends Animal {
 
-    double tailLength;
+    private double tailLength;
 
 
     public TailAnimal(String name, String favoriteFood, int age, LocalDate zooEnteringDate, double weight, double height, double tailLength) {

@@ -3,7 +3,8 @@ import java.time.LocalDate;
 
 public class WingAnimal extends Animal {
 
-    double wingspan;
+    private double wingspan;
+
     public WingAnimal(String name, String favoriteFood, int age, LocalDate zooEnteringDate, double weight, double height, double wingspan) {
         super(name, favoriteFood, age, zooEnteringDate, weight, height);
         this.wingspan = wingspan;
