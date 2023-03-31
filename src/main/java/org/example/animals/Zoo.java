@@ -47,16 +47,16 @@ public class Zoo {
                 .orElse(null);
     }
 
-    public Animal getAnimaleConCodaPiuLunga() {
+    public Animal getAnimaleConCodaPiuLunga(String specie) {
         return animali.stream()
-                .filter(a -> a instanceof TailAnimal)
+                .filter(a -> a.getClass().getSimpleName().equalsIgnoreCase(specie))
                 .max(Comparator.comparingDouble(a -> ((TailAnimal) a).getTailLength()))
                 .orElse(null);
     }
 
-    public Animal getAnimaleConAperturaAlarePiuGrande() {
+    public Animal getAnimaleConAperturaAlarePiuGrande(String specie) {
         return animali.stream()
-                .filter(a -> a instanceof WingAnimal)
+                .filter(a -> a.getClass().getSimpleName().equalsIgnoreCase(specie))
                 .max(Comparator.comparingDouble(a -> ((WingAnimal) a).getWingspan()))
                 .orElse(null);
 
