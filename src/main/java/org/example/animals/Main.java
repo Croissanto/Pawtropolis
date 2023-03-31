@@ -50,7 +50,11 @@ public class Main {
 
 
         }
+        Animal leonePiuAlto = zoo.getAnimalePiuAlto("lion");
+        System.out.println("animale piu alto:" + leonePiuAlto.getName());
 
+        Animal aquilaPiuBassa = zoo.getAnimalePiuBasso("eagle");
+        System.out.println("aquila più bassa:" + aquilaPiuBassa.getName());
     }
 
 
