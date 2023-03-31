@@ -1,9 +1,10 @@
-package org.example;
+package org.example.animals;
+
+import org.example.animals.Animal;
 
 import java.time.LocalDate;
-import java.util.Date;
 
-public class TailAnimal extends Animal{
+public class TailAnimal extends Animal {
 
     double tailLength;
 

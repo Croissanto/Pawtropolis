@@ -1,9 +1,10 @@
-package org.example;
+package org.example.animals;
+
+import org.example.animals.Animal;
 
 import java.time.LocalDate;
-import java.util.Date;
 
-public class WingAnimal extends Animal{
+public class WingAnimal extends Animal {
 
     double wingspan;
     public WingAnimal(String name, String favoriteFood, int age, LocalDate zooEnteringDate, double weight, double height, double wingspan) {

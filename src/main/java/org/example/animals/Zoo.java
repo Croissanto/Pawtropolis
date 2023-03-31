@@ -1,4 +1,4 @@
-package org.example;
+package org.example.animals;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -59,5 +59,7 @@ public class Zoo {
                 .filter(a -> a instanceof WingAnimal)
                 .max(Comparator.comparingDouble(a -> ((WingAnimal) a).getWingspan()))
                 .orElse(null);
+
+
     }
 }

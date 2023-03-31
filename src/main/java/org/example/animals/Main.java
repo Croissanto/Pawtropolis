@@ -1,7 +1,6 @@
-package org.example;
+package org.example.animals;
 
 import java.time.LocalDate;
-import java.util.Comparator;
 
 
 public class Main {
