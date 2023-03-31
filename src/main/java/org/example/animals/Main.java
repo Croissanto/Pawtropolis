@@ -16,11 +16,11 @@ public class Main {
         Eagle aquila1 = new Eagle("Thunderbolt", "Carne", 2, LocalDate.now(), 5, 0.3, 1.2);
         Eagle aquila2 = new Eagle("Lightning", "Carne", 4, LocalDate.now(), 4, 0.2, 1.0);
 
-        zoo.aggiungiAnimale(leone1);
-        zoo.aggiungiAnimale(leone2);
-        zoo.aggiungiAnimale(tigre1);
-        zoo.aggiungiAnimale(aquila1);
-        zoo.aggiungiAnimale(aquila2);
+        zoo.addAnimal(leone1);
+        zoo.addAnimal(leone2);
+        zoo.addAnimal(tigre1);
+        zoo.addAnimal(aquila1);
+        zoo.addAnimal(aquila2);
 
         // Stampa tutti gli animali
         System.out.println("Elenco di tutti gli animali dello zoo:");

@@ -11,7 +11,7 @@ public class Zoo {
         this.animali = new ArrayList<>();
     }
 
-    public void aggiungiAnimale(Animal animale) {
+    public void addAnimal(Animal animale) {
         this.animali.add(animale);
     }
 
