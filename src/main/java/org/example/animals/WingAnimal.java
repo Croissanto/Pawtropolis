@@ -1,7 +1,4 @@
 package org.example.animals;
-
-import org.example.animals.Animal;
-
 import java.time.LocalDate;
 
 public class WingAnimal extends Animal {
