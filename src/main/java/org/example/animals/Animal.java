@@ -1,7 +1,7 @@
 package org.example.animals;
 
 import java.time.LocalDate;
-import java.util.Date;
+
 
 public abstract class Animal {
 
