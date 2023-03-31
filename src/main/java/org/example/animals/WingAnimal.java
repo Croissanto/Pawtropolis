@@ -1,7 +1,7 @@
 package org.example.animals;
 import java.time.LocalDate;
 
-public class WingAnimal extends Animal {
+public abstract class WingAnimal extends Animal {
 
     private double wingspan;
 
