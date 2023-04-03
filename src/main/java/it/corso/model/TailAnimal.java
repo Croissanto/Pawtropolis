@@ -1,6 +1,8 @@
-package org.example.animals;
+package it.corso.model;
 
 
+
+import it.corso.model.Animal;
 
 import java.time.LocalDate;
 

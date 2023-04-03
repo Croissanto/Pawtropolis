@@ -1,4 +1,8 @@
-package org.example.animals;
+package it.corso.controller;
+
+import it.corso.model.TailAnimal;
+import it.corso.model.WingAnimal;
+import it.corso.model.Animal;
 
 import java.util.ArrayList;
 import java.util.Comparator;

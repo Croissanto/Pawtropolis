@@ -1,4 +1,10 @@
-package org.example.animals;
+package it.corso;
+
+import it.corso.controller.Zoo;
+import it.corso.model.Animal;
+import it.corso.model.Eagle;
+import it.corso.model.Lion;
+import it.corso.model.Tiger;
 
 import java.time.LocalDate;
 
@@ -23,7 +29,7 @@ public class Main {
         zoo.addAnimal(aquila1);
         zoo.addAnimal(aquila2);
 
-        // TODO: 
+        // TODO:
         Animal aquilaConAperturaAlareMaggiore = zoo.getAnimaleConAperturaAlarePiuGrande("eagle");
         System.out.println("aquila con apertura alare maggiore: "+ aquilaConAperturaAlareMaggiore.getName());
 
